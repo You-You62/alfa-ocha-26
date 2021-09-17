@@ -35,14 +35,8 @@
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">第1章</span>警備室の鍵</h2>
             <p class="text-center">
-              友人によると、<br>
-              一昨日、同室の患者から「真夜中に霊が命と臓器を1つ持っていってしまう」と言う噂を聞いた友人は、その話を信じていなかったが、次の日その同室の患者は亡くなってしまったらしい。<br>
-              そして看護師が言うにはその患者からは臓器が一つ抜き取られていた....<br>
-              恐ろしくなって昼間に病院から出ようとしたが、看護師たちに止められてしまったので出ることができなかった。<br>
-              
-              警備室の前にある、鍵の保管庫にたどり着いた。<br>
-              
-              下の画像の謎を解き、保管庫の４桁の暗証番号を入力しよう。</p>
+              下の画像の謎を解き、保管庫の４桁の暗証番号を入力しよう。
+            </p>
             <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
 
             <div class="container">
@@ -84,9 +78,7 @@
             <div class="clear-message">
               <div class="clear-message__title">第1章：完</div>
               <div class="clear-message__content">
-                鍵の保管庫が開いた<br>
-                保管庫は開いたが肝心の警備室の鍵がない<br>
-                そのかわりに、紙が一枚入っていた...
+                鍵の保管庫が開いたようだ
               </div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
@@ -107,7 +99,7 @@
             <div class="container">
               <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">第2章</span>鍵のありか</h2>
               <p class="text-center">
-                その紙には、また新しい謎が書いてあった<br>
+                その紙には、また新しい謎が書いてあったらしい<br>
                 この場所に鍵が置いてあるはず、とりあえずこの謎を解こう...<br>
                 </p>
             </div>
@@ -128,11 +120,11 @@
 
                 <!-- STAGE2-1　ここから -->
                 <div class="column">
-                  <!-- STAGE2-1問題セクション　ここから -->
+                  <!-- STAGE2-1問題セクション　ここから 
                   <figure class="image__container">
                     <img src="assets/images/Q2.png" alt="">
                   </figure>
-                  <!-- STAGE2-1問題セクション　ここまで -->
+                  STAGE2-1問題セクション　ここまで -->
                   <!-- STAGE2-1解答入力セクション　ここから -->
                   <answer-input v-bind:correct="correctAnswer['stage2']['q1']" v-on:answer-input="answerInput($event, 'stage2', 1)"></answer-input>
                   <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
@@ -141,33 +133,24 @@
                 <!-- STAGE2-1　ここまで -->
 
 <!-- STAGE2-2 を追加
-
                 <div class="column">
-
                   <figure class="image__container">
                     <img src="assets/images/stage.png" alt="">
                   </figure>
-
                   <answer-input v-bind:correct="correctAnswer['stage2']['q2']" v-on:answer-input="answerInput($event, 'stage2', 2)"></answer-input>
                   <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
                 　
                 </div>
-
 2-2追加ここまで -->
                   
 <!-- STAGE2-3 を追加
-
                 <div class="column">
-
                   <figure class="image__container">
                     <img src="assets/images/stage.png" alt="">
                   </figure>
-
                   <answer-input v-bind:correct="correctAnswer['stage2']['q3']" v-on:answer-input="answerInput($event, 'stage2', 3)"></answer-input>
                   <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
-
                 </div>
-
 2-3追加ここまで -->
 
               </div><!-- /.row -->
@@ -227,16 +210,13 @@
         <!-- STAGE3-1解答入力セクション　ここまで -->
 
 <!-- STAGE3-2問題セクション を追加
-
           <section class="section">
           <div class="container">
-
             <figure class="image__container">
               <img src="assets/images/stage.png" alt="">
             </figure>
           </div>
         </section>
-
         <section class="section bg-color--keycolor">
           <div class="container">
             <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
@@ -251,22 +231,18 @@ STAGE3-2追加ここまで -->
 <!-- STAGE3-3問題セクション　を追加
         <section class="section">
           <div class="container">
-
             <figure class="image__container">
               <img src="assets/images/stage.png" alt="">
             </figure>
           </div>
         </section>
-
         <section class="section bg-color--keycolor">
           <div class="container">
             <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
-
             <answer-input v-bind:correct="correctAnswer['stage3']['q3']" v-on:answer-input="answerInput($event, 'stage3', 3, 'final')"></answer-input>
             <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
           </div>
         </section>
-
 STAGE3-3追加　ここまで -->
 
           
